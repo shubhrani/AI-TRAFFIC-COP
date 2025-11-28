@@ -1,0 +1,32 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Index - Smart Traffic Monitoring</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Smart Traffic Monitoring - Index</h1>
+    <nav>
+      <a href="{{ url_for('landing') }}">Home</a>
+      <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Legacy Index</h2>
+    <p>This is a simple legacy index page retained for compatibility.</p>
+    <ul>
+      <li><a href="{{ url_for('run_module', module='helmet_detection') }}">Helmet Stream</a></li>
+      <li><a href="{{ url_for('run_module', module='red_light') }}">Red Light Stream</a></li>
+      <li><a href="{{ url_for('run_module', module='speed_monitor') }}">Speed Stream</a></li>
+    </ul>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 MINI Project</p>
+  </footer>
+</body>
+</html>

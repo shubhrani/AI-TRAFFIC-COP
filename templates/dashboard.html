@@ -1,0 +1,49 @@
+<!-- templates/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Traffic Monitoring System - Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Dashboard</h1>
+    <nav>
+      <a href="{{ url_for('landing') }}">Home</a>
+      <a href="{{ url_for('dashboard') }}">Dashboard</a>
+      <a href="{{ url_for('index') }}">Legacy</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="dashboard">
+      <h2>Violation Summary</h2>
+      <table class="violation-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Violation Type</th>
+            <th>Count</th>
+            <th>Last Report</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for v in violations %}
+          <tr>
+            <td>{{ v.id }}</td>
+            <td>{{ v.type }}</td>
+            <td>{{ v.count }}</td>
+            <td>{{ v.last }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 MINI Project</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!-- templates/landing.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Traffic Monitoring System - Landing</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>Smart Traffic Monitoring System</h1>
+    <nav>
+      <a href="{{ url_for('landing') }}">Home</a>
+      <a href="{{ url_for('dashboard') }}">Dashboard</a>
+      <a href="{{ url_for('index') }}">Legacy</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="cards">
+      <div class="card">
+        <h3>Red Light Violation</h3>
+        <p>Detect vehicles running a red light.</p>
+        <a class="btn" href="{{ url_for('run_module', module='red_light') }}">Run Module</a>
+      </div>
+
+      <div class="card">
+        <h3>Helmet Detection</h3>
+        <p>Detect riders with and without helmets.</p>
+        <a class="btn" href="{{ url_for('run_module', module='helmet_detection') }}">Run Module</a>
+      </div>
+
+      <div class="card">
+        <h3>Speed Monitoring</h3>
+        <p>Estimate vehicle speed and flag speeding vehicles.</p>
+        <a class="btn" href="{{ url_for('run_module', module='speed_monitor') }}">Run Module</a>
+      </div>
+    </section>
+
+    {% if active_module %}
+    <section class="stream-area">
+      <h2>Live Stream: {{ active_module.replace('_', ' ').title() }}</h2>
+      <div class="video-wrapper">
+        <img id="live-stream" src="{{ url_for('video_feed', module=active_module) }}" alt="Live stream" />
+      </div>
+      <div class="controls">
+        <a class="btn secondary" href="{{ url_for('landing') }}">Close Stream</a>
+      </div>
+    </section>
+    {% endif %}
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 MINI Project</p>
+  </footer>
+</body>
+</html>
