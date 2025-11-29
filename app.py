@@ -20,7 +20,7 @@ def get_generator(module_name):
 
 @app.route('/')
 def landing():
-    # default landing page, no stream active
+    # default landing page, no stream is active
     return render_template('landing.html', active_module=None)
 
 @app.route('/run/<module>')
@@ -71,5 +71,5 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    # set host to 0.0.0.0 if you want external access on your LAN
+    # set hosts to 0.0.0.0 if you want external access on your LAN
     app.run(host='0.0.0.0', port=5000, debug=True)
