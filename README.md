@@ -22,6 +22,7 @@ AI-TRAFFIC-COP/
 └── yolov8n.pt              # YOLOv8n model weights
 
 
+
 ## 🚀 Features
 
 ### 🔴 1. Red Light Violation Detection
