@@ -12,19 +12,19 @@ It integrates **three AI models**—Speed Monitoring, Helmet Detection, and Red-
 
 ---AI-TRAFFIC-COP
 │
-├── detectors/              # YOLOv8 detection scripts for each model
+├── detectors/            
 │
-├── static/                 # CSS, JS, images used in the dashboard
+├── static/                 
 │
-├── templates/              # Frontend pages (HTML)
+├── templates/             
 │   ├── dashboard.html
 │   ├── index.html
 │   └── landing.html
 │
-├── app.py                  # Main Flask application (backend server)
-├── requirements.txt        # Python dependencies
-├── README.md               # Documentation
-└── yolov8n.pt              # YOLOv8 model weights
+├── app.py               
+├── requirements.txt      
+├── README.md          
+└── yolov8n.pt              
 
 
 ## 🚀 Features
