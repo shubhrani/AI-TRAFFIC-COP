@@ -10,17 +10,17 @@ It integrates **three AI models**—Speed Monitoring, Helmet Detection, and Red-
 ## 📁 Project Structure
 
 
----AI-TRAFFIC-COP
-│
-├── detectors/            
-│
-├── static/                 
-│
+AI-TRAFFIC-COP 
+│ 
+├── detectors/             
+│ 
+├── static/                  
+│ 
 ├── templates/             
-│   ├── dashboard.html
-│   ├── index.html
-│   └── landing.html
-│
+│   ├── dashboard.html 
+│   ├── index.html 
+│   └── landing.html 
+│ 
 ├── app.py               
 ├── requirements.txt      
 ├── README.md          
