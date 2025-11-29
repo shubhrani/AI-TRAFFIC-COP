@@ -1,5 +1,10 @@
 # 🛑🚦 AI TRAFFIC COP
 
+
+#  🚦 AI TRAFFIC COP – Smart AI Traffic Management System
+
+
+
 ### A Smart AI-Powered Traffic Management System using Python, OpenCV & YOLOv8
 
 AI TRAFFIC COP is an intelligent, automated traffic monitoring system designed to assist traffic authorities by detecting and reporting real-time traffic violations.  
@@ -7,24 +12,26 @@ It integrates **three AI models**—Speed Monitoring, Helmet Detection, and Red-
 
 ---
 
+
 ## 📁 Project Structure
 
-
----AI-TRAFFIC-COP
+```txt
+AI-TRAFFIC-COP/
 │
-├── detectors/              # YOLOv8 detection scripts for each model
+├── detectors/              # Detection modules and utility scripts
 │
-├── static/                 # CSS, JS, images used in the dashboard
+├── static/                 # CSS, JS, and static assets
 │
-├── templates/              # Frontend pages (HTML)
+├── templates/              # HTML templates for Flask
 │   ├── dashboard.html
 │   ├── index.html
 │   └── landing.html
 │
-├── app.py                  # Main Flask application (backend server)
-├── requirements.txt        # Python dependencies
-├── README.md               # Documentation
-└── yolov8n.pt              # YOLOv8 model weights
+├── app.py                  # Main Flask application
+├── requirements.txt        # Project dependencies
+├── README.md               # Project documentation
+└── yolov8n.pt              # YOLOv8n model weights
+```
 
 
 ## 🚀 Features
