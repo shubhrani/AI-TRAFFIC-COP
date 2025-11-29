@@ -1,34 +1,29 @@
-# 🛑🚦 AI TRAFFIC COP
+#  🚦 AI TRAFFIC COP – Smart AI Traffic Management System
+
+
+
 ### A Smart AI-Powered Traffic Management System using Python, OpenCV & YOLOv8
 
-AI TRAFFIC COP is an intelligent automated traffic monitoring system designed to help authorities detect and report real-time traffic violations.  
-It integrates **three AI modules**—Speed Monitoring, Helmet Detection, and Red-Light Violation Detection—powered by **YOLOv8**, **OpenCV**, and a visual dashboard built using **HTML/CSS/JS**.
+AI TRAFFIC COP is an intelligent, automated traffic monitoring system designed to assist traffic authorities by detecting and reporting real-time traffic violations.  
+It integrates *three AI models—Speed Monitoring, Helmet Detection, and Red-Light Violation—powered by **YOLOv8, **OpenCV, and a **visual dashboard* built using *HTML/CSS/JS*.
 
 ---
 
+
 ## 📁 Project Structure
 
+txt
 AI-TRAFFIC-COP/
+│
 ├── detectors/              # Detection modules and utility scripts
+│
 ├── static/                 # CSS, JS, and static assets
+│
 ├── templates/              # HTML templates for Flask
 │   ├── dashboard.html
 │   ├── index.html
 │   └── landing.html
-├── app.py                  # Main Flask application
-├── requirements.txt        # Project dependencies
-├── README.md               # Project documentation
-└── yolov8n.pt              # YOLOv8n model weights
-
-
-```txt
-AI-TRAFFIC-COP/
-├── detectors/              # Detection modules and utility scripts
-├── static/                 # CSS, JS, and static assets
-├── templates/              # HTML templates for Flask
-│   ├── dashboard.html
-│   ├── index.html
-│   └── landing.html
+│
 ├── app.py                  # Main Flask application
 ├── requirements.txt        # Project dependencies
 ├── README.md               # Project documentation
@@ -43,7 +38,7 @@ AI-TRAFFIC-COP/
 - Reads signal state and marks violators  
 - Logs violation frames for evidence
 
-### 🏍️ 2. Helmet Detection System
+### 🏍 2. Helmet Detection System
 - Identifies motorcycle riders  
 - Detects whether the rider is wearing a helmet  
 - Marks non-helmet riders with bounding boxes and warnings
@@ -54,7 +49,7 @@ AI-TRAFFIC-COP/
 - Flags speed-limit violators automatically
 
 ### 📊 4. Real-Time Monitoring Dashboard
-- Built with **HTML, CSS & JavaScript**  
+- Built with *HTML, CSS & JavaScript*  
 - Displays live AI outputs  
 - Shows analytics:
   - Speed stats  
@@ -63,7 +58,7 @@ AI-TRAFFIC-COP/
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 ### Backend & AI
 - Python  
@@ -79,9 +74,9 @@ AI-TRAFFIC-COP/
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙ Installation & Setup
 
-### 1️⃣ Clone the Repository
+### ⿡ Clone the Repository
 ```bash
 git clone https://github.com/your-username/AI-TRAFFIC-COP.git
-cd AI-TRAFFIC-COP
+cd AI-TRAFFIC-COP
