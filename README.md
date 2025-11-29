@@ -9,22 +9,17 @@ It integrates **three AI models**—Speed Monitoring, Helmet Detection, and Red-
 
 ## 📁 Project Structure
 
-
-AI-TRAFFIC-COP 
-│ 
-├── detectors/             
-│ 
-├── static/                  
-│ 
-├── templates/             
-│   ├── dashboard.html 
-│   ├── index.html 
-│   └── landing.html 
-│ 
-├── app.py               
-├── requirements.txt      
-├── README.md          
-└── yolov8n.pt              
+AI-TRAFFIC-COP/
+├── detectors/              # Detection modules and utility scripts
+├── static/                 # CSS, JS, and static assets
+├── templates/              # HTML templates for Flask
+│   ├── dashboard.html
+│   ├── index.html
+│   └── landing.html
+├── app.py                  # Main Flask application
+├── requirements.txt        # Project dependencies
+├── README.md               # Project documentation
+└── yolov8n.pt              # YOLOv8n model weights
 
 
 ## 🚀 Features
